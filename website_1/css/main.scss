@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #007AF3
+}
+
+body{
+    background: #f2f2f2;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.navbar {
+    background: white;
+    padding: 1em;
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+
+        span{
+            color: var(--primary-color);
+
+        }
+        span-1 {
+            display: block;
+            margin: -1em;
+            padding: 0;
+            font-size: .6em;
+            text-align: center;
+            color: var(--primary-color);
+            
+        }
+    
+    }
+
+   
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu{
+        cursor: pointer;
+        
+    }
+}
+
+a{
+    color: #444444;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+section{
+    padding: 5em 2em;
+
+}
+
+.hero {
+    text-align: center;
+}
+
+
+.left-col{
+    .subhead{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: gray;    
+        letter-spacing: .3em
+    }
+    h1{
+        font-size: 2em;
+        line-height: 1.2em;
+        margin-top: .2em;
+    }
+    .primary-cta{
+        
+        border-radius: 5em;
+        background: var(--primary-color);
+        text-decoration: none;
+        color: white;
+        font-size: 1.4em;
+        padding: .6em 1.3em;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .primary-cta:hover {
+        transition: 0.2s;
+        background: #04AA6D;
+    }    
+
+    .continents{
+        display: block;
+        margin-top: 1em;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em;
+
+
+        &:hover {
+            color: var(--primary-color);
+        }
+
+        img {
+            margin-right: 0.5em;
+        }
+    }
+}
+
+.back-illus {
+    width: 65%;
+    margin-top: 3em;
+}
+
+section.features-section{
+    background: #20272E;
+    color: white;
+    display: flex;
+}
+
+ul.features-list{
+    margin: 0;
+    padding-left: .1em;
+    display: grid;
+
+    li{
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+
+        &:before{
+            content:'';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/bullet.svg');
+            background-size: contain;
+            margin-right: 0.5em;
+        }
+    }
+}
+
+.features-section img{
+    display: none;
+}
+
+
+
+h2 {
+    font-size: 2em;
+
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-top: .5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin: 0;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+
+    
+}
+
+.send-message-cta {
+    border-radius: 0.7em;
+    background: var(--primary-color);
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.6em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+nav.menu-btn {
+    display: block;
+
+}
+
+@media only screen and (min-width:1450px) {
+    .feature-section {
+
+        &:before{
+            content: '';
+            position: absolute;
+            width: 10%;
+            height: 20em;
+            top: -4em;
+        }
+    }
+}
+// nav {
+//     position: fixed;
+//     z-index: 999;
+//     width: 60%;
+//     right:0;
+//     top: 0;
+//     background: #20272e;
+//     height: 100vh;
+//     padding: 1em;
+
+//     ul.primary-nav {
+//         margin-top: 5em;
+//     }
+    
+//     li {
+//         a {
+//             color: white;
+//             text-decoration: none;
+//             display: block;
+//             padding: .5em;
+//             font-size: 1.3em;
+//             text-align: right;
+            
+//             &:hover {
+//                 font-weight: bold;
+//             }
+//         }
+        
+//     }
+// }
+
+// .mobile-menu-exit {
+//     float: right;
+//     padding: .5em;
+//     cursor: pointer;
+// }
