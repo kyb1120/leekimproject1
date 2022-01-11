@@ -35,6 +35,10 @@ body {
   color: var(--primary-color);
 }
 
+.navbar nav {
+  display: none;
+}
+
 .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,13 +201,52 @@ nav.menu-btn {
   display: block;
 }
 
-@media only screen and (min-width: 1450px) {
-  .feature-section:before {
-    content: '';
-    position: absolute;
-    width: 10%;
-    height: 20em;
-    top: -4em;
-  }
+nav {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  width: 60%;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  text-align: right;
+  padding: 1em;
+  -webkit-transition: 2s;
+  transition: 2s;
+  overflow-x: hidden;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-top: 1em;
+  padding-right: 0.2em;
+  display: block;
+  font-size: 1.3em;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #04AA6D), color-stop(50%, #20272E)) left;
+  background: linear-gradient(to left, #04AA6D 50%, #20272E 50%) left;
+  background-size: 200%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+nav a:hover {
+  font-weight: bold;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 2px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-position: right;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
