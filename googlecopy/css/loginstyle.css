@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body h1{
+    font-size: 60px;
+    text-align: center; color: #fff;
+    width: auto;
+    margin-bottom: 50px;
+}
+
+/* background image set */
+.backgorund-img{
+    /* background-image: url(../img/loginbackground-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    height: 100vh;
+    background: url(../img/loginbackground-img.jpg) no-repeat center;
+    background-size: cover
+}
+
+section .login-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
