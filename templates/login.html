@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="=UTF-8">
+        <meta name="author" content="leekim">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="static/css/loginstyle.css">
+        <title>login</title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <section class="login-box">
+            <h1>LOGIN</h1>
+            <form  method="post">
+                <div class="int-area">
+                    <input type="text" placeholder="USER NAME" name="user-id" id="id" autocomplete="off" required>
+                </div>
+                <div class="int-area">
+                    <input type="password" placeholder="PASSWORD" name="user-password" id="password">
+                </div>
+                <div class="btn-submit">
+                    <button type="submit" class="login-btn">LOGIN</button>
+                </div>
+                <div>
+                    <a href="./signup" class="join-member">Join to be a member</a> <!-- 여기서도 원래 ./signup.html 이었는데, 그러면 접속이
+                        안됨. 근데 .html 을 제거했는데 로그인 화면으로 이어짐. 아마 redering_template 때문이 아닌가 예상-->
+                    <br>
+                    <a class="forgot">Forgot yout password?</a>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
